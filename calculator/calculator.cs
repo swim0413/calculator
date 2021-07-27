@@ -12,13 +12,13 @@ namespace calculator
 {
     public enum Operators { Add, Sub, Multi, Div }
 
-    public partial class Form1 : Form
+    public partial class calculator : Form
     {
         public int res = 0;
         public bool isNewNum = true;
         public Operators Opt = Operators.Add;
 
-        public Form1()
+        public calculator()
         {
             InitializeComponent();
         }
@@ -55,6 +55,10 @@ namespace calculator
                     res += nowNum;
                 else if(Opt == Operators.Sub)
                     res -= nowNum;
+                else if (Opt == Operators.Multi)
+                    res *= nowNum;
+                else if (Opt == Operators.Div)
+                    res /= nowNum;
 
                 resultBox.Text = res.ToString();
                 isNewNum = true;
@@ -66,6 +70,10 @@ namespace calculator
                 Opt = Operators.Add;
             else if(optButton.Text == "-")
                 Opt = Operators.Sub;
+            else if (optButton.Text == "×")
+                Opt = Operators.Multi;
+            else if (optButton.Text == "÷")
+                Opt = Operators.Div;
         }
 
         private void clearNum_Click(object sender, EventArgs e)

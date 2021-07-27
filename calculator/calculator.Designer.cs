@@ -1,7 +1,7 @@
 ﻿
 namespace calculator
 {
-    partial class Form1
+    partial class calculator
     {
         /// <summary>
         ///  Required designer variable.
@@ -44,11 +44,14 @@ namespace calculator
             this.button1 = new System.Windows.Forms.Button();
             this.clearNum = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // resultBox
             // 
             this.resultBox.BackColor = System.Drawing.Color.White;
+            this.resultBox.Cursor = System.Windows.Forms.Cursors.No;
             this.resultBox.Font = new System.Drawing.Font("맑은 고딕", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.resultBox.Location = new System.Drawing.Point(12, 31);
             this.resultBox.Multiline = true;
@@ -60,6 +63,7 @@ namespace calculator
             // 
             // numBt1
             // 
+            this.numBt1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.numBt1.Font = new System.Drawing.Font("맑은 고딕", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.numBt1.Location = new System.Drawing.Point(23, 417);
             this.numBt1.Name = "numBt1";
@@ -71,6 +75,7 @@ namespace calculator
             // 
             // numBt2
             // 
+            this.numBt2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.numBt2.Font = new System.Drawing.Font("맑은 고딕", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.numBt2.Location = new System.Drawing.Point(110, 417);
             this.numBt2.Name = "numBt2";
@@ -82,6 +87,7 @@ namespace calculator
             // 
             // numBt3
             // 
+            this.numBt3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.numBt3.Font = new System.Drawing.Font("맑은 고딕", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.numBt3.Location = new System.Drawing.Point(198, 417);
             this.numBt3.Name = "numBt3";
@@ -93,6 +99,7 @@ namespace calculator
             // 
             // numBt4
             // 
+            this.numBt4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.numBt4.Font = new System.Drawing.Font("맑은 고딕", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.numBt4.Location = new System.Drawing.Point(23, 332);
             this.numBt4.Name = "numBt4";
@@ -104,6 +111,7 @@ namespace calculator
             // 
             // numBt5
             // 
+            this.numBt5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.numBt5.Font = new System.Drawing.Font("맑은 고딕", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.numBt5.Location = new System.Drawing.Point(110, 332);
             this.numBt5.Name = "numBt5";
@@ -115,6 +123,7 @@ namespace calculator
             // 
             // numBt6
             // 
+            this.numBt6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.numBt6.Font = new System.Drawing.Font("맑은 고딕", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.numBt6.Location = new System.Drawing.Point(198, 332);
             this.numBt6.Name = "numBt6";
@@ -126,6 +135,7 @@ namespace calculator
             // 
             // numBt7
             // 
+            this.numBt7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.numBt7.Font = new System.Drawing.Font("맑은 고딕", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.numBt7.Location = new System.Drawing.Point(23, 248);
             this.numBt7.Name = "numBt7";
@@ -137,6 +147,7 @@ namespace calculator
             // 
             // numBt8
             // 
+            this.numBt8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.numBt8.Font = new System.Drawing.Font("맑은 고딕", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.numBt8.Location = new System.Drawing.Point(110, 248);
             this.numBt8.Name = "numBt8";
@@ -148,6 +159,7 @@ namespace calculator
             // 
             // numBt9
             // 
+            this.numBt9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.numBt9.Font = new System.Drawing.Font("맑은 고딕", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.numBt9.Location = new System.Drawing.Point(198, 248);
             this.numBt9.Name = "numBt9";
@@ -159,6 +171,7 @@ namespace calculator
             // 
             // numBt0
             // 
+            this.numBt0.Cursor = System.Windows.Forms.Cursors.Hand;
             this.numBt0.Font = new System.Drawing.Font("맑은 고딕", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.numBt0.Location = new System.Drawing.Point(110, 501);
             this.numBt0.Name = "numBt0";
@@ -170,6 +183,7 @@ namespace calculator
             // 
             // plusBt
             // 
+            this.plusBt.Cursor = System.Windows.Forms.Cursors.Hand;
             this.plusBt.Font = new System.Drawing.Font("맑은 고딕", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.plusBt.Location = new System.Drawing.Point(288, 417);
             this.plusBt.Name = "plusBt";
@@ -181,6 +195,7 @@ namespace calculator
             // 
             // button1
             // 
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.Font = new System.Drawing.Font("맑은 고딕", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button1.Location = new System.Drawing.Point(288, 332);
             this.button1.Name = "button1";
@@ -192,6 +207,7 @@ namespace calculator
             // 
             // clearNum
             // 
+            this.clearNum.Cursor = System.Windows.Forms.Cursors.Hand;
             this.clearNum.Font = new System.Drawing.Font("맑은 고딕", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.clearNum.Location = new System.Drawing.Point(113, 174);
             this.clearNum.Name = "clearNum";
@@ -203,6 +219,7 @@ namespace calculator
             // 
             // button2
             // 
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.Font = new System.Drawing.Font("맑은 고딕", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button2.Location = new System.Drawing.Point(288, 501);
             this.button2.Name = "button2";
@@ -212,11 +229,37 @@ namespace calculator
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.plusBt_Click);
             // 
-            // Form1
+            // button3
+            // 
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button3.Font = new System.Drawing.Font("맑은 고딕", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button3.Location = new System.Drawing.Point(288, 248);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(67, 68);
+            this.button3.TabIndex = 15;
+            this.button3.Text = "×";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.plusBt_Click);
+            // 
+            // button4
+            // 
+            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button4.Font = new System.Drawing.Font("맑은 고딕", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button4.Location = new System.Drawing.Point(288, 174);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(67, 68);
+            this.button4.TabIndex = 16;
+            this.button4.Text = "÷";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.plusBt_Click);
+            // 
+            // calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(382, 577);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.clearNum);
             this.Controls.Add(this.button1);
@@ -232,8 +275,8 @@ namespace calculator
             this.Controls.Add(this.numBt2);
             this.Controls.Add(this.numBt1);
             this.Controls.Add(this.resultBox);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "calculator";
+            this.Text = "Calculator-swim";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -256,6 +299,8 @@ namespace calculator
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button clearNum;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
     }
 }
 
