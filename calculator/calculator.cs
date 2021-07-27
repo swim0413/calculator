@@ -85,8 +85,7 @@ namespace calculator
             resultBox.Text = "0";
         }
 
-        
-
+       
         private void sourceLink_Click(object sender, EventArgs e)
         {
             try
