@@ -10,10 +10,13 @@ using System.Windows.Forms;
 
 namespace calculator
 {
+    public enum Operators { Add, Sub, Multi, Div }
+
     public partial class Form1 : Form
     {
         public int res = 0;
         public bool isNewNum = true;
+        public Operators Opt = Operators.Add;
 
         public Form1()
         {
@@ -22,7 +25,8 @@ namespace calculator
 
         private void numBt1_Click(object sender, EventArgs e)
         {
-            setNum("1");
+            Button numBt = (Button)sender;
+            setNum(numBt.Text);
         }
 
         public void setNum(string num)
@@ -42,17 +46,35 @@ namespace calculator
             }
         }
 
-        private void numBt2_Click(object sender, EventArgs e)
-        {
-            setNum("2");
-        }
-
         private void plusBt_Click(object sender, EventArgs e)
         {
-            int nowNum = int.Parse(resultBox.Text);
-            res += nowNum;
-            resultBox.Text = res.ToString();
+            if(isNewNum == false)
+            {
+                int nowNum = int.Parse(resultBox.Text);
+                if(Opt == Operators.Add)
+                    res += nowNum;
+                else if(Opt == Operators.Sub)
+                    res -= nowNum;
+
+                resultBox.Text = res.ToString();
+                isNewNum = true;
+            }
+
+
+            Button optButton = (Button)sender;
+            if(optButton.Text == "+")
+                Opt = Operators.Add;
+            else if(optButton.Text == "-")
+                Opt = Operators.Sub;
+        }
+
+        private void clearNum_Click(object sender, EventArgs e)
+        {
+            res = 0;
             isNewNum = true;
+            Opt = Operators.Add;
+
+            resultBox.Text = "0";
         }
     }
 }

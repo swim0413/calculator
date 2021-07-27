@@ -41,10 +41,14 @@ namespace calculator
             this.numBt9 = new System.Windows.Forms.Button();
             this.numBt0 = new System.Windows.Forms.Button();
             this.plusBt = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.clearNum = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // resultBox
             // 
+            this.resultBox.BackColor = System.Drawing.Color.White;
             this.resultBox.Font = new System.Drawing.Font("맑은 고딕", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.resultBox.Location = new System.Drawing.Point(12, 31);
             this.resultBox.Multiline = true;
@@ -74,7 +78,7 @@ namespace calculator
             this.numBt2.TabIndex = 2;
             this.numBt2.Text = "2";
             this.numBt2.UseVisualStyleBackColor = true;
-            this.numBt2.Click += new System.EventHandler(this.numBt2_Click);
+            this.numBt2.Click += new System.EventHandler(this.numBt1_Click);
             // 
             // numBt3
             // 
@@ -85,6 +89,7 @@ namespace calculator
             this.numBt3.TabIndex = 3;
             this.numBt3.Text = "3";
             this.numBt3.UseVisualStyleBackColor = true;
+            this.numBt3.Click += new System.EventHandler(this.numBt1_Click);
             // 
             // numBt4
             // 
@@ -95,6 +100,7 @@ namespace calculator
             this.numBt4.TabIndex = 4;
             this.numBt4.Text = "4";
             this.numBt4.UseVisualStyleBackColor = true;
+            this.numBt4.Click += new System.EventHandler(this.numBt1_Click);
             // 
             // numBt5
             // 
@@ -105,6 +111,7 @@ namespace calculator
             this.numBt5.TabIndex = 5;
             this.numBt5.Text = "5";
             this.numBt5.UseVisualStyleBackColor = true;
+            this.numBt5.Click += new System.EventHandler(this.numBt1_Click);
             // 
             // numBt6
             // 
@@ -115,6 +122,7 @@ namespace calculator
             this.numBt6.TabIndex = 6;
             this.numBt6.Text = "6";
             this.numBt6.UseVisualStyleBackColor = true;
+            this.numBt6.Click += new System.EventHandler(this.numBt1_Click);
             // 
             // numBt7
             // 
@@ -125,6 +133,7 @@ namespace calculator
             this.numBt7.TabIndex = 7;
             this.numBt7.Text = "7";
             this.numBt7.UseVisualStyleBackColor = true;
+            this.numBt7.Click += new System.EventHandler(this.numBt1_Click);
             // 
             // numBt8
             // 
@@ -135,6 +144,7 @@ namespace calculator
             this.numBt8.TabIndex = 8;
             this.numBt8.Text = "8";
             this.numBt8.UseVisualStyleBackColor = true;
+            this.numBt8.Click += new System.EventHandler(this.numBt1_Click);
             // 
             // numBt9
             // 
@@ -145,6 +155,7 @@ namespace calculator
             this.numBt9.TabIndex = 9;
             this.numBt9.Text = "9";
             this.numBt9.UseVisualStyleBackColor = true;
+            this.numBt9.Click += new System.EventHandler(this.numBt1_Click);
             // 
             // numBt0
             // 
@@ -155,11 +166,12 @@ namespace calculator
             this.numBt0.TabIndex = 10;
             this.numBt0.Text = "0";
             this.numBt0.UseVisualStyleBackColor = true;
+            this.numBt0.Click += new System.EventHandler(this.numBt1_Click);
             // 
             // plusBt
             // 
             this.plusBt.Font = new System.Drawing.Font("맑은 고딕", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.plusBt.Location = new System.Drawing.Point(303, 332);
+            this.plusBt.Location = new System.Drawing.Point(288, 417);
             this.plusBt.Name = "plusBt";
             this.plusBt.Size = new System.Drawing.Size(67, 68);
             this.plusBt.TabIndex = 11;
@@ -167,11 +179,47 @@ namespace calculator
             this.plusBt.UseVisualStyleBackColor = true;
             this.plusBt.Click += new System.EventHandler(this.plusBt_Click);
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("맑은 고딕", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button1.Location = new System.Drawing.Point(288, 332);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(67, 68);
+            this.button1.TabIndex = 12;
+            this.button1.Text = "-";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.plusBt_Click);
+            // 
+            // clearNum
+            // 
+            this.clearNum.Font = new System.Drawing.Font("맑은 고딕", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.clearNum.Location = new System.Drawing.Point(113, 174);
+            this.clearNum.Name = "clearNum";
+            this.clearNum.Size = new System.Drawing.Size(67, 68);
+            this.clearNum.TabIndex = 13;
+            this.clearNum.Text = "C";
+            this.clearNum.UseVisualStyleBackColor = true;
+            this.clearNum.Click += new System.EventHandler(this.clearNum_Click);
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("맑은 고딕", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button2.Location = new System.Drawing.Point(288, 501);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(67, 68);
+            this.button2.TabIndex = 14;
+            this.button2.Text = "=";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.plusBt_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(382, 577);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.clearNum);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.plusBt);
             this.Controls.Add(this.numBt0);
             this.Controls.Add(this.numBt9);
@@ -205,6 +253,9 @@ namespace calculator
         private System.Windows.Forms.Button numBt9;
         private System.Windows.Forms.Button numBt0;
         private System.Windows.Forms.Button plusBt;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button clearNum;
+        private System.Windows.Forms.Button button2;
     }
 }
 
