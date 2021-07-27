@@ -84,5 +84,20 @@ namespace calculator
 
             resultBox.Text = "0";
         }
+
+        
+
+        private void sourceLink_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                System.Diagnostics.Process.Start("https://github.com/swim0413/calculator");
+                sourceLink.LinkVisited = true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }

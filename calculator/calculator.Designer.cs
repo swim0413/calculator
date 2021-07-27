@@ -47,6 +47,9 @@ namespace calculator
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.sourceLink = new System.Windows.Forms.LinkLabel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // resultBox
@@ -263,11 +266,47 @@ namespace calculator
             this.textBox1.TabIndex = 17;
             this.textBox1.Text = "계산기-단순 정수만 계산 가능.\r\nC#으로 제작.";
             // 
+            // sourceLink
+            // 
+            this.sourceLink.AccessibleRole = System.Windows.Forms.AccessibleRole.Link;
+            this.sourceLink.AutoSize = true;
+            this.sourceLink.BackColor = System.Drawing.SystemColors.Control;
+            this.sourceLink.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.sourceLink.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.sourceLink.Font = new System.Drawing.Font("맑은 고딕", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.sourceLink.LinkColor = System.Drawing.Color.Teal;
+            this.sourceLink.Location = new System.Drawing.Point(12, 144);
+            this.sourceLink.Name = "sourceLink";
+            this.sourceLink.Size = new System.Drawing.Size(84, 21);
+            this.sourceLink.TabIndex = 18;
+            this.sourceLink.TabStop = true;
+            this.sourceLink.Text = "view source";
+            this.sourceLink.Click += new System.EventHandler(this.sourceLink_Click);
+            // 
+            // label1
+            // 
+            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(100, 23);
+            this.label1.TabIndex = 0;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(102, 145);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(227, 15);
+            this.label2.TabIndex = 19;
+            this.label2.Text = "https://github.com/swim0413/calculator";
+            // 
             // calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(382, 577);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.sourceLink);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
@@ -313,6 +352,9 @@ namespace calculator
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.LinkLabel sourceLink;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
 
